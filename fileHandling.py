@@ -98,7 +98,7 @@ class FileHandling:
             # Handle the JSON decoding error, to log it or take specific actions.
 
         except FileNotFoundError as file_err:
-            print(f"Error reading file: {file_err}")
+            print(f"File does not exit: {file_err}")
             # Handle the file not found error, check if the files exist or create default data.
 
         except Exception as e:
@@ -109,6 +109,6 @@ class FileHandling:
         # print('auctiondata: ', self.auctions)
         # print('biddata: ', self.bids)
 
+
 file1 = FileHandling()
-file1.load_data()
-file1.show_data(file1.auctions)
+# file1.load_data()

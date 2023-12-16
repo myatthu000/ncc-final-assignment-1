@@ -12,7 +12,7 @@ from my_modules import time_remaining
 import my_validation
 
 
-class Auction_client():
+class Client:
 
     def __init__(self):
         self.a3E = encry_decrypt.A3Encryption()
@@ -22,13 +22,12 @@ class Auction_client():
         self.target_port = 9191
         self.userKey = self.getting_key()
         self.r2 = my_validation.Validation()
-        # self.auth_user = {"33447473332":
-        #                       {"uuid": "9350237307",
-        #                        "username": "boss1",
-        #                        "email": "boss1@gmail.com",
-        #                        "password": "passworD123",
-        #                        "address": "ssxst,sr,SSR",
-        #                        "phone_number": "0978771214", "content": "boos"}}
+        # self.auth_user = {"68861114141": {"uuid": "6447101397", "username": "myat1",
+        #                                   "email": "myat1@gmail.com",
+        #                                   "password": "passworD123",
+        #                                   "address": "somewhere",
+        #                                   "phone_number": "0919771218",
+        #                                   "content": "aaaaa"}}
         self.auth_user = {}
         self.auction_list = {}
         self.user_list = {}
@@ -596,7 +595,6 @@ class Auction_client():
 
 
 if __name__ == "__main__":
-    auction_client: Auction_client = Auction_client()
-
+    auction_client: Client = Client()
     while True:
         auction_client.client_menu()

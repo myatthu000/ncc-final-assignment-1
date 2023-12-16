@@ -160,6 +160,6 @@ class Validation:
 
     def is_valid_address(self, address):
         print("----address: ", address)
-        return True  # edit for testing purpose
+        return True
 
 # r2 = Validation()

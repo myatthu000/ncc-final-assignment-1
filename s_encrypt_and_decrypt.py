@@ -43,9 +43,9 @@ class A3Decryption():
 
         return self.decrypted_data
 
-if __name__ == "__main__":
-    a3 = A3Encryption()
-    da3 = A3Decryption()
-    encrypted: str = a3.start_encryption("NationalCyberCity", "winhtut")
-    decrypted: str =da3.startDecryption(encrypted)
+# if __name__ == "__main__":
+#     a3 = A3Encryption()
+#     da3 = A3Decryption()
+#     encrypted: str = a3.start_encryption("NationalCyberCity", "winhtut")
+#     decrypted: str =da3.startDecryption(encrypted)
     # print("Decrypted data:",decrypted)

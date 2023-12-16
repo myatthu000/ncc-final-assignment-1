@@ -12,7 +12,7 @@ import my_modules
 from my_modules import time_remaining
 
 
-class Server():
+class Server:
 
     def __init__(self):
         self.a3E = s_encrypt_and_decrypt.A3Encryption()
@@ -21,6 +21,7 @@ class Server():
         self.r2 = my_validation.Validation()
 
         self.file_use = fileHandling.FileHandling()
+        self.file_use.create_files()
         self.file_use.load_data()
 
         self.users = self.file_use.users
@@ -450,5 +451,5 @@ class Server():
 
 if __name__ == "__main__":
     auction: Server = Server()
-    auction.file_use.create_files()
+    # auction.file_use.create_files()
     auction.main()

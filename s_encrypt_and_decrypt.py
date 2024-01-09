@@ -42,10 +42,3 @@ class A3Decryption():
             self.decrypted_data += chr(decrypted_int)
 
         return self.decrypted_data
-
-# if __name__ == "__main__":
-#     a3 = A3Encryption()
-#     da3 = A3Decryption()
-#     encrypted: str = a3.start_encryption("NationalCyberCity", "winhtut")
-#     decrypted: str =da3.startDecryption(encrypted)
-    # print("Decrypted data:",decrypted)
